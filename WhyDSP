@@ -1,0 +1,20 @@
+Multirate processing and sampling rate conversion are clever digital signal processing techniques that can be employed
+during the system design process. Using these techniques, one can gain an added degree of freedom that could improve 
+the overall performance of system architecture. The most immediate reason is when you pass data between two systems 
+which use incompatible sampling rates. For example, professional audio systems use a rate of 48 kHz, but consumer 
+CD players use a rate of 44.1 kHz. When audio professionals transfer their recorded music to CDs, they need to do a 
+rate conversion. 
+
+But the most common reason is that multirate DSP can greatly increase processing efficiency,
+which reduces DSP system cost. In telecommunication systems that transmit and receive various signals 
+(audio, video, etc.), the sampling rate of the system has to be adjusted to suit the bandwidth of the signal in 
+order to avoid signal degradation such as aliasing and imaging.
+
+A fascinating example of a multirate system is the “tri-band” cellular phone, which can be used over an analog and 
+two digital systems. When the phone “switches” its mode, the sampling rate is also changed in order to accommodate 
+the different modulation scheme. At other times multirate processing is used to reduce computational overhead of
+a system. For example, if an algorithm requires k operations per cycle, then by reducing the sampling rate of a 
+signal or system by a factor of D, the arithmetic bandwidth requirements are reduced from kf s operations to kfs/D 
+operations per second. 
+
+This application provide a glimpse of how applications are using multirate processing and sampling rate conversion.
