@@ -1,6 +1,9 @@
 /*
 Decimation by an integer factor
 */
+
+#include <varDef.h>
+
 static void decimation(const float ∗const argh)
 {
 	int i, tap , phase_num ;
