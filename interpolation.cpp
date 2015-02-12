@@ -1,6 +1,9 @@
 /*
 Interpolation by an integer factor
 */
+
+#include <varDef.h>
+
 static void interpolation(const float ∗const argh)
 {
 	int i, tap , phase_num ;
