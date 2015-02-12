@@ -1,6 +1,9 @@
 /*
 Sampling rate conversion by a rational factor
 */
+
+#include <varDef.h>
+
 static void sampleRateByRationalFactor(const float ∗const argh)
 {
 	int i, tap , phase_num, sizeop ;
